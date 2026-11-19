@@ -9,7 +9,7 @@ const CARTO_KEY =
   "cb1_45fq_1_cf78a486fd3779b895177c50";
 
 export const TILE_URL =
-  `https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png` +
+  `https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png` +
   (CARTO_KEY ? `?key=${CARTO_KEY}` : "");
 export const ATTRIBUTION =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';

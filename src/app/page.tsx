@@ -9,9 +9,9 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-black text-white selection:bg-white selection:text-black">
       <Navbar />
-      <main>
+      <main className="w-full max-w-full overflow-x-hidden">
         <Hero />
         <Problem />
         <Features />
