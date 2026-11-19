@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: railsail
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: NODE_ENV
+        value: production
+      - key: CARTO_API_KEY
+        value: cb1_45fq_1_cf78a486fd3779b895177c50
+      - key: NEXT_PUBLIC_CARTO_API_KEY
+        value: cb1_45fq_1_cf78a486fd3779b895177c50
